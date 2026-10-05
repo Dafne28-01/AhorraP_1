@@ -8,8 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="arcticons--52-weeks-money-challenge.svg">
     <!-- Importación de Google Fonts (Poppins) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Ruta corregida para que cargue los estilos correctamente -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <div class="app-container-full">
@@ -19,7 +18,7 @@
             <div class="nav-links">
                 <a href="#acerca">Conócenos</a>
                 <a href="#conectar">Probar</a>
-                <a href="#movimientos">Movimientos</a>
+                <a href="#ahorrap">AhorraP</a>
                 <a href="#contacto" class="nav-cta">Contáctanos</a>
             </div>
         </nav>
@@ -27,7 +26,7 @@
         <!-- Cabecera -->
         <header class="app-header" id="inicio">
             <div class="title-with-icon">
-                <img src="icono/arcticons--52-weeks-money-challenge.svg" alt="Icono AhorraP" class="app-icon">
+                <img src="arcticons--52-weeks-money-challenge.svg" alt="Icono AhorraP" class="app-icon">
                 <h1>AhorraP</h1>
                 <span class="badge">Perú</span>
             </div>
@@ -58,7 +57,7 @@
                 <h2>CONECTAR GOOGLE SHEETS</h2>
                 <p>Ingresa el ID de tu hoja de cálculo configurada para visualizar tus movimientos financieros.</p>
                 <div class="input-group">
-                    <input type="text" id="sheetId" placeholder="Ej: 1BxiMVs0XR05nVLw2BQs-q1v79_g9t65k1y2s3w45xyz">
+                    <input type="text" id="sheetId" placeholder="Ej: 1Q9y4Afly-oSiSFuQaHPAX48x83x2mBD6bQkL3ruafIM">
                     <button id="btnConectar" onclick="conectarHoja()">Cargar Datos</button>
                 </div>
             </div>
@@ -109,7 +108,7 @@
             <!-- Fila 1 -->
             <div class="feature-row">
                 <div class="feature-img">
-                    <img src="imagenes/screen 1 .png" alt="Panel principal de movimientos AhorraP">
+                    <img src="screen 1 .png" alt="Panel principal de movimientos AhorraP">
                 </div>
                 <div class="feature-text">
                     <h3>PANEL PRINCIPAL DE MOVIMIENTOS</h3>
@@ -126,7 +125,7 @@
                     <p>Mediante un sencillo identificador (ID) de hoja de cálculo, la aplicación establece una lectura estructurada para certificar tus registros al instante.</p>
                 </div>
                 <div class="feature-img">
-                    <img src="imagenes/screen.png" alt="Sincronización con Google Sheets AhorraP">
+                    <img src="screen.png" alt="Sincronización con Google Sheets AhorraP">
                 </div>
             </div>
         </section>
@@ -171,9 +170,9 @@
                     </div>
                     <h4 style="margin-top: 15px;">NAVEGACIÓN</h4>
                     <ul class="nav-links-secondary">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#movimientos">Movimientos</a></li>
-                        <li><a href="#conectar">Conexión Sheets</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#tablaMovimientos">Movimientos</a></li>
+                        <li><a href="#sheetId">Conexión Sheets</a></li>
                     </ul>
                 </div>
             </div>
@@ -209,8 +208,8 @@
         </div>
     </div>
 
-    <!-- Scripts de la aplicación -->
-    <script src="js/app.js"></script>
+    <!-- Se enlaza correctamente el archivo app.js requerido -->
+    <script src="app.js"></script>
     <script>
         function toggleChat() {
             const box = document.getElementById('chatBox');
