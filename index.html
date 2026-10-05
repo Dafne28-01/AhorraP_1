@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AhorraP - Gestión Financiera para Ingresos Variables</title>
+    <!-- Icono de la pestaña -->
     <link rel="icon" type="image/svg+xml" href="arcticons--52-weeks-money-challenge.svg">
+    <!-- Importación de Google Fonts (Poppins) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
@@ -16,7 +18,7 @@
             <div class="nav-links">
                 <a href="#acerca">Conócenos</a>
                 <a href="#conectar">Probar</a>
-                <a href="#ahorrap">AhorraP</a>
+                <a href="#movimientos">Movimientos</a>
                 <a href="#contacto" class="nav-cta">Contáctanos</a>
             </div>
         </nav>
@@ -168,9 +170,9 @@
                     </div>
                     <h4 style="margin-top: 15px;">NAVEGACIÓN</h4>
                     <ul class="nav-links-secondary">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#tablaMovimientos">Movimientos</a></li>
-                        <li><a href="#sheetId">Conexión Sheets</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#movimientos">Movimientos</a></li>
+                        <li><a href="#conectar">Conexión Sheets</a></li>
                     </ul>
                 </div>
             </div>
@@ -206,7 +208,7 @@
         </div>
     </div>
 
-    <!-- JavaScript Integrado Directamente para Evitar Errores de Carga en GitHub Pages -->
+    <!-- Script de conexión y chatbot integrado -->
     <script>
         function conectarHoja() {
             const sheetId = document.getElementById('sheetId').value.trim();
